@@ -1,0 +1,108 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 50vh;
+  position: relative;
+}
+
+body {
+  background-color: #f31717;
+  background: linear-gradient(to right, #93a3ff, #e42b2bd8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.logo {
+  font-size: 100px;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo::before,
+.logo::after {
+  content: 'TRC';
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.logo::before {
+  color: #0b75ee;
+  transform: translateY(5px) translateX(-5px);
+}
+
+.logo::after {
+  color: #ff0000fb;
+  transform: translateY(-5px) translateX(5px);
+}
+
+.container {
+  background-color: #c9d6ff;
+  border-radius: 30px;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.35);
+  position: relative;
+  overflow: hidden;
+  width: 400px;
+  max-width: 100%;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #5070ff;
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-size: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #ff0000fb;
+}
+
+button[name="Cadraste-se"] {
+  margin-top: 10px;
+}
+
