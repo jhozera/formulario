@@ -1,41 +1,48 @@
 <?php
-  require_once("header.php");
-  require_once("message.php");
-  require_once("user.php");
+
+if(isset($_POST['submit'])) {
+
+    Include_once("db.php");
+
+    $nome =$_POST['nome'];
+    $sobrenome =$_POST['sobrenome'];
+    $email =$_POST['email'];
+    $senha =$_POST['senha'];
+  
+   $result = mysqli_query($conexao, "INSERT INTO massivos(nome,sobrenome,email,senha) VALUES ($nome, $sobrenome,$email,$senha)");
+}
 ?>
-  <html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-      <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="<?= $BASE_URL ?>style.css">
     </head>
-    <link rel="stylesheet" href="<?= $BASE_URL ?>style.css">
-    <body>
-    <form method="POST" action="cadastro.php">
-    <div class="form-group">
-        <label for="login">Login:</label>
-        <input type="text" id="login" name="login">
-    </div>
-    <div class="form-group">
-        <label for="senha">Senha:</label>
-        <input type="password" id="senha" name="senha">
-    </div>
-    <div class="form-group">
-        <button type="submit" name="entrar">Entrar</button>
-        <button tyoe="submit" name= "Cadraste-se"</button> 
-        <a href="cadrasto.php">Cadraste-se</a>
-    </div>
-    <div class="form-group">
-        <label for="nome">nome:</label>
-        <input type="nome" id="nome" name="nome">
-    <div class="form-group">
-        <label for="sobrenome">sobrenome:</label>
-        <input type="sobrenome" id="lastname" name="sobrenome">
-    <div class="form-group">
-        <label for="email">email:</label>
-        <input type="email" id="email" name="email">
-    <div class="form-group">
-        <label for="crie uma senha">Senha:</label>
-        <input type="password" id="crie uma senha" name="crie uma senha">
-    </div>        
-</form>
-</body>
+        <body>
+        <div class="logo">
+            <title>Controle massivos</title>
+        <div class="form-group">
+            <label for = "login">login</label>
+            <input type="text" id="login" name="login">
+        </div>
+        <div class="form-group">
+            <label for = "senha" >senha</label>
+            <input type="password" id="senha" name="senha">
+        </div>
+        <div class="form-group">
+            <button type="submit" name="Entrar">Entrar</button>
+            <button type="submit" name="Cadrastar">Cadrastar</button>
+        </div>
+        <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome">
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" id="sobrenome" name="sobrenome">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email">
+            <label for="senha">Crie uma senha</label>
+            <input type="password" id="senha" name="senha">
+        </div>    
+    </body>
 </html>

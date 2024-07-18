@@ -1,11 +1,16 @@
 <?php
-$db_name = "users";
 $db_host = "localhost";
 $db_user = "root";
-$db_pass = ""; 
+$db_pass = "";
+$db_name = "pro";
 
-$conn = new PDO("mysql:dbname=".$db_name.";host=".$db_host, $db_user, $db_pass);
+$conexao = new mysqli($db_host, $db_user, $db_pass, $db_name);
 
-$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-$conn->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+if ($conexao->connect_error) {
+    die("FALHA" . $conexao->connect_error);
+} else {
+    echo "SUCESSO";
+}
+
+$conexao->close();
 ?>
