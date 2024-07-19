@@ -1,48 +1,47 @@
 <?php
 
-if(isset($_POST['submit'])) {
-
-    Include_once("db.php");
-
-    $nome =$_POST['nome'];
-    $sobrenome =$_POST['sobrenome'];
-    $email =$_POST['email'];
-    $senha =$_POST['senha'];
-  
-   $result = mysqli_query($conexao, "INSERT INTO massivos(nome,sobrenome,email,senha) VALUES ($nome, $sobrenome,$email,$senha)");
-}
+    include_once("db.php");
+    
+    if ($_SERVER["REQUEST_METHOD"]=="POST") {
+        $email = $_POST["email"];
+        $password = $_POST["password"];
+       
+        try {
+            $sql = "INSERT INTO massivos (email, senha) VALUES (?, ?)
+                    ON DUPLICATE KEY UPDATE email = VALUES(email), senha = VALUES(senha)";
+    
+            $stmt = $conexao->prepare($sql);
+    
+            $stmt->bindParam(1, $email, PDO::PARAM_STR);
+            $stmt->bindParam(2, $password, PDO::PARAM_STR);
+    
+            $stmt->execute();
+    
+            echo "logado com sucesso!";
+        } catch (PDOException $e) {
+            echo "Erro ao logar: " . $e->getMessage();
+        }
+    }
+    
+ 
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="<?= $BASE_URL ?>style.css">
-    </head>
-        <body>
-        <div class="logo">
-            <title>Controle massivos</title>
-        <div class="form-group">
-            <label for = "login">login</label>
-            <input type="text" id="login" name="login">
-        </div>
-        <div class="form-group">
-            <label for = "senha" >senha</label>
-            <input type="password" id="senha" name="senha">
-        </div>
-        <div class="form-group">
-            <button type="submit" name="Entrar">Entrar</button>
-            <button type="submit" name="Cadrastar">Cadrastar</button>
-        </div>
-        <div class="form-group">
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" name="nome">
-            <label for="sobrenome">Sobrenome</label>
-            <input type="text" id="sobrenome" name="sobrenome">
-            <label for="email">Email</label>
-            <input type="text" id="email" name="email">
-            <label for="senha">Crie uma senha</label>
-            <input type="password" id="senha" name="senha">
-        </div>    
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle massivos</title>
+    <link rel="stylesheet" href="<?= $BASE_URL ?>style.css">
+    <link rel="stylesheet" href="<?= $BASE_URL ?>cadras.php">
+</head>
+<body>
+    <h1>Login</h1>
+    <form method="post" action="index.php">
+        E-mail: <input type="email" name="email"><br> 
+        Senha: <input type="password" name="password" required><br>
+        <input type="submit" value="Logar">
+    </form>
+</body>
 </html>
