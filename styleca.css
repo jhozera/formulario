@@ -1,52 +1,54 @@
 
 .montserrat {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-  }
-  
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
 body {
     margin: 100px;
-  }
-  
-  
+}
+
+
 h1 {
     color: rgb(235, 235, 235);
     position: 50px;
     margin: 0 auto;
     width: 200px;
     left: 50%;
+
+      
 }
-  
+
 form{
     color: rgb(255, 255, 255);
     position: 50px;
     margin: 0 auto;
     left: 50%;
     width: 200px;
-  
+
 }
-  
-  
+
+
 input {
     border-radius: 5px;
     margin: 5px;
-  
+
 }
-  
-  
+
+
 body {
     background-color: rgb(56, 55, 55);
-  }
-  
-.Logar {
+}
+
+.cadrastar {
     cursor: grab;
     color: rgb(0, 0, 0);
     width: 100px;
     border: 50px;
     padding: 5px;
-       
+     
 }
 
 .link {
