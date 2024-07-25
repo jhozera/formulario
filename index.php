@@ -1,40 +1,39 @@
 <?php
+
 session_start();
 
-require_once("db.php");
+try {
+    $conexao = new PDO('mysql:host=localhost;dbname=pro', 'root', '');
+    $conexao->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    echo 'Erro ao conectar ao banco de dados: ' . $e->getMessage();
+    exit;
+}
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $email = $_POST['email'];
-    $password = $_POST['password'];
+if (isset($_POST['email'], $_POST['senha'])) {
+    $email = strtolower($_POST['email']);
+    $senha = $_POST['senha'];
 
-    $sql = "SELECT * FROM massivos WHERE email = :email";
-    $stmt = $conexao->prepare($sql);
-    $stmt->bindParam(":email", $email, PDO::PARAM_STR);
-
+    $consulta = "SELECT email, senha FROM massivos WHERE email = :email";
+    $stmt = $conexao->prepare($consulta);
+    $stmt->bindParam(':email', $email);
     $stmt->execute();
+    $resultado = $stmt->fetch();
 
-    if ($stmt->rowCount() === 1) {
-        $row = $stmt->fetch(PDO::FETCH_ASSOC);
-
-        if (password_verify($password, $row['senha'])) { 
-            session_regenerate_id();
-
-            $_SESSION["loggedin"] = true;
-            $_SESSION["email"] = $email; 
-            
+    if ($resultado) {
+        $hashed_senha_from_db = $resultado["senha"];
+        if (password_verify($senha, $hashed_senha_from_db)) {
+            $_SESSION['email'] = $email;
+            echo "logado com sucesso";
         } else {
-            $error = "Usuário ou senha incorretos";
+            echo "senha incorreta";
         }
     } else {
-        $error = "Usuário ou senha incorretos";
+        echo "email não encontrado";
     }
-}
+ }
 
-if (isset($error)) {
-    echo $error;
-}
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -42,19 +41,16 @@ if (isset($error)) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Controle massivos</title>
-    <link rel="stylesheet" href="<?= $BASE_URL ?>cadras.php">
     <link rel="stylesheet" href="style.css">
-    <script>
-</script>
 </head>
 <body>
     <h1>Login</h1>
     <form method="post" action="index.php">
         E-mail: <input type="email" name="email"><br> 
-        Senha: <input type="password" name="password" required><br>
-        <input class= "Logar" type="submit" value="Logar">
+        Senha: <input type="password" name="senha" required><br>
+        <input class="Logar" type="submit" value="Logar">
     </form>
     <br>
-    <a class= "link" href="cadras.php">Cadrastar</a>
+    <a class="link" href="cadras.php">Cadrastar</a>
 </body>
 </html>
