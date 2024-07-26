@@ -1,37 +1,39 @@
 <?php
 
-session_start();
 
-try {
-    $conexao = new PDO('mysql:host=localhost;dbname=pro', 'root', '');
-    $conexao->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (PDOException $e) {
-    echo 'Erro ao conectar ao banco de dados: ' . $e->getMessage();
-    exit;
-}
-
-if (isset($_POST['email'], $_POST['senha'])) {
-    $email = strtolower($_POST['email']);
-    $senha = $_POST['senha'];
-
-    $consulta = "SELECT email, senha FROM massivos WHERE email = :email";
-    $stmt = $conexao->prepare($consulta);
-    $stmt->bindParam(':email', $email);
-    $stmt->execute();
-    $resultado = $stmt->fetch();
-
-    if ($resultado) {
-        $hashed_senha_from_db = $resultado["senha"];
-        if (password_verify($senha, $hashed_senha_from_db)) {
-            $_SESSION['email'] = $email;
-            echo "logado com sucesso";
-        } else {
-            echo "senha incorreta";
-        }
+if (isset($_POST['email']) && isset($_POST['senha'])) {
+    if (strlen($_POST['email']) == 0) {
+        echo "Insira o email correto";
+    } elseif (strlen($_POST['senha']) == 0) {
+        echo "Insira a senha correta";
     } else {
-        echo "email não encontrado";
+        $consulta = "SELECT * FROM massivos WHERE email = :email AND senha = :senha";
+
+        
+        $pdo = new PDO('mysql:host=localhost;dbname=pro', 'root', '');
+        $stmt = $pdo->prepare($consulta);
+        $stmt->bindParam(':email', $_POST['email']);
+        $stmt->bindParam(':senha', $_POST['senha']);
+        $stmt->execute();
+
+        
+        if ($stmt->rowCount() > 0) {
+            
+            if (!isset($_SESSION)) {
+                session_start();
+            }
+
+            
+            $_SESSION['email'] = $_POST['email'];
+
+           
+            header('Location: pagina.php');
+            exit;
+        } else {
+            echo "Email ou senha incorretos";
+        }
     }
- }
+}
 
 ?>
 
