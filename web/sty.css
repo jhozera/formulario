@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(255, 255, 255); 
+    border: 7px solid rgb(199, 29, 29);
+    border-radius: 5px;
+
+      
+}
+
+h1 {
+    color: rgb(31, 120, 197);
+    margin: 0 auto;
+    width: 200px;
+    left: 50%;
+   
+  
+}
+
+
+
+
+.PagBank{
+    position: absolute;
+    border: 20px;
+    width: 150px; /* largura */
+    height: 99px; /* altura */
+    border-radius: 5px;
+    margin-top: 7%;
+    transform: translateX(60px)   
+}
+
+.imgpag {
+    position: absolute;
+    border: 20px;
+    width: 150px; /* largura */
+    height: 100px;
+    margin-left: -50%;
+    margin-top: -33%;
+    border-radius: 5px;
+   
+}

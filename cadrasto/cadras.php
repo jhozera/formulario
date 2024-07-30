@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt = $conexao->prepare($sql);
 
         $stmt->bindParam(1, $name, PDO::PARAM_STR);
-        $stmt->bindParam(2, $sobrenome, PDO::PARAM_STR);
+        $stmt->bindParam(2, $sobrenome, PDO::PARAM_STR);                    
         $stmt->bindParam(3, $email, PDO::PARAM_STR);
         $stmt->bindParam(4, $password, PDO::PARAM_STR);
 
@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro Massivo</title>
-    <link rel="stylesheet" href="styleca.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -52,6 +52,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         Senha: <input type="password" name="password" required><br>
         <input class = 'cadrastar'type="submit" value="Cadastrar">
     </form>
-    <a class= "link" href="index.php">Login</a>
+    <a class= "link" href="../login/login.php">Login</a>
 </body>
 </html>

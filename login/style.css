@@ -1,0 +1,72 @@
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+  
+body {
+    margin: 100px;
+    
+  }
+  
+  
+h1 {
+    color: rgb(235, 235, 235);
+    position: 50px;
+    margin: 0 auto;
+    width: 200px;
+    left: 50%;
+    
+}
+  
+form{
+    color: rgb(255, 255, 255);
+    position: 50px;
+    margin: 0 auto;
+    left: 50%;
+    width: 200px;
+    
+  
+}
+  
+  
+input {
+    border-radius: 5px;
+    margin: 5px;
+  
+}
+  
+  
+body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    background-color: rgb(233, 233, 233);
+    border-radius: 40px;
+    background: #4d0404;
+    box-shadow:  5px 5px 10px #251e1e,
+                -5px -5px 10px #111111;
+    padding: 20px;
+  }
+  
+.Logar {
+    cursor: grab;
+    color: rgb(0, 0, 0);
+    width: 100px;
+    border: 50px;
+    padding: 5px;
+       
+}
+
+.link {
+    color: white;
+    width: 200px;
+    margin: 0 auto;
+    position: absolute;
+    left: 15%;
+    transform: translateY(-5px);
+}
