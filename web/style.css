@@ -1,0 +1,271 @@
+body {
+    background: linear-gradient(to right, rgb(255, 255, 255), #ffffff);
+}
+
+
+h1 {
+    position: absolute;
+    background: linear-gradient(135deg, #bd0606, #ffffff);
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: -15px;
+    padding: 5px 10px;
+    text-align: center;
+    width: 100px;
+    left: 2%;
+}
+
+h2 {
+    position: absolute;
+    background: linear-gradient(135deg, #313030, #e40303);
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 150px;
+    left: 300px;
+    
+    
+}
+
+h3 {
+    position: absolute;
+    background: linear-gradient(135deg, #313030, #e40303);
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 150px;
+    left: 900px;
+    
+    
+}
+
+
+
+.pag, .return, .renner, .berlanda, .bradesco, .itapeva, .zema, .mercado, .bmg, .sercomtel, .nova, .credipar, .ligga, .losango {
+    position: absolute;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+
+.pag {
+    background-color: rgb(44, 44, 39);
+    box-shadow: 5px 5px 10px  #000000, -5px -5px 10px #000000;
+    color: rgb(255, 255, 255);
+    left: 20px;
+    margin-top: 50px;
+}
+
+.return {
+    background-color: rgb(44, 44, 39);
+    box-shadow: 5px 5px 10px  #000000, -5px -5px 10px #000000;
+    color: rgb(255, 255, 255);
+    left: 20px;
+    margin-top: 200px;
+}
+
+.renner {
+    background-color: rgb(44, 44, 39);
+    box-shadow: 5px 5px 10px  #000000, -5px -5px 10px #000000;
+    color: rgb(255, 255, 255);
+    left: 20px;
+    margin-top: 150px;
+}
+
+.berlanda {
+    background-color: rgb(44, 44, 39);
+    box-shadow: 5px 5px 10px  #000000, -5px -5px 10px #000000;
+    color: rgb(255, 255, 255);
+    left: 20px;
+    margin-top: 100px;
+}
+
+.bradesco {
+    background-color: rgb(44, 44, 39);
+    box-shadow: 5px 5px 10px  #000000, -5px -5px 10px #000000;
+    color: rgb(255, 255, 255);
+    left: 20px;
+    margin-top: 250px;
+}
+
+.itapeva {
+    background-color: rgb(44, 44, 39);
+    box-shadow: 5px 5px 10px  #000000, -5px -5px 10px #000000;
+    color: rgb(255, 255, 255);
+    left: 20px;
+    margin-top: 300px; 
+}
+
+.zema {
+    background-color: rgb(44, 44, 39);
+    box-shadow: 5px 5px 10px  #000000, -5px -5px 10px #000000;
+    color: rgb(255, 255, 255);
+    left: 20px;
+    margin-top: 350px; 
+}
+
+.mercado {
+    background-color: rgb(44, 44, 39);
+    box-shadow: 5px 5px 10px  #000000, -5px -5px 10px #000000;
+    color: rgb(255, 255, 255);
+    left: 20px;
+    margin-top: 400px; 
+}
+
+.credipar {
+    background-color: rgb(44, 44, 39);
+    box-shadow: 5px 5px 10px  #000000, -5px -5px 10px #000000;
+    color: rgb(255, 255, 255);
+    left: 20px;
+    margin-top: 450px; 
+}
+
+.ligga {
+    background-color: rgb(44, 44, 39);
+    box-shadow: 5px 5px 10px  #000000, -5px -5px 10px #000000;
+    color: rgb(255, 255, 255);
+    left: 20px;
+    margin-top: 500px; 
+}
+
+.sercomtel {
+    background-color: rgb(44, 44, 39);
+    box-shadow: 5px 5px 10px  #000000, -5px -5px 10px #000000;
+    color: rgb(255, 255, 255);
+    left: 20px;
+    margin-top: 550px; 
+}
+
+.bmg {
+    background-color: rgb(44, 44, 39);
+    box-shadow: 5px 5px 10px  #000000, -5px -5px 10px #000000;
+    color: rgb(255, 255, 255);
+    left: 20px;
+    margin-top: 600px; 
+}
+
+.losango {
+    background-color: rgb(44, 44, 39);
+    box-shadow: 5px 5px 10px  #000000, -5px -5px 10px #000000;
+    color: rgb(255, 255, 255);
+    left: 20px;
+    margin-top: 650px; 
+}
+
+#barra {
+    background: linear-gradient(to right, rgb(20, 10, 8), #770202);
+    padding: 50px;
+    border-radius: 20px;
+    margin-top: -40px;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+#lateral {
+    position: absolute;
+    background: linear-gradient(to right, rgb(44, 44, 44), #380404);
+    padding: 65px;
+    border-radius: 20px;
+    margin-top: 10px;
+    width: -20px;
+    left: 8px;
+    height: 100vh;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+
+.sair {
+    color:#ffffff;
+    background-color: #770202;
+    border: rgb(39, 37, 37);
+    border-radius: 10px;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    cursor: grab;
+    margin-top: -60px;
+    padding: 5px;
+    width: 45px;
+    left: 95%;
+
+}
+
+
+.container {
+    background-color: rgb(255, 255, 255);
+    border: 3px solid black;
+    border-radius: 5px;
+    margin-top: 150px;
+    padding: 15px;
+    translate: 350px;
+    max-width: 450px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.message {
+    border-radius: 5px;
+    border: 5px solid black;
+    height: 50px;
+    width: 50px;
+    
+}
+
+.zenvia {
+    border-radius: 5px;
+    border: 5px solid black;
+    height: 50px;
+    width: 50px;
+}
+
+
+.caixa {
+    border-radius: 5px;
+    border: 5px solid black;
+    height: 50px;
+    width: 50px;
+
+}
+
+.bradesco1 {
+    border-radius: 5px;
+    border: 5px solid black;
+    height: 50px;
+    width: 50px;
+}
+
+.claro {
+    border-radius: 5px;
+    border: 5px solid black;
+    height: 50px;
+    width: 50px;
+
+}
+
+.lemit {
+    border-radius: 5px;
+    border: 5px solid black;
+    height: 50px;
+    width: 50px;
+}
+
+.kolmeya {
+    border-radius: 5px;
+    border: 5px solid black;
+    height: 50px;
+    width: 50px;
+}
+

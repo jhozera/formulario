@@ -3,8 +3,6 @@
 
 include_once('mys.php');
 
-
-
 if(isset($_POST['email'])) {
 
   
@@ -18,7 +16,7 @@ if(isset($_POST['email'])) {
         if(password_verify($senha, $usuario['senha'])) {
             header('Location: ../web/pagina.php');
         } else {
-            echo "Usuario incorreto";
+            echo "";
         }
         if(!isset($_SESSION)) {
             session_start();
@@ -35,7 +33,7 @@ if(isset($_POST['email'])) {
      <link rel="stylesheet" href="style.css">
  </head>
  <body>
-     <h1>Login</h1>
+     <h1>TRC</h1>
      <form method="post" action="">
          E-mail: <input type="email" name="email" required><br> 
          Senha: <input type="password" name="senha" required><br>

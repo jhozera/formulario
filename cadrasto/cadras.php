@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $stmt->execute();
 
-        echo "Cadastro realizado com sucesso!";
+        echo '';
     } catch (PDOException $e) {
         echo "Erro ao cadastrar: " . $e->getMessage();
     }
@@ -39,12 +39,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro Massivo</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Cadastro</h1>
+    <h1>TRC</h1>
     <form method="post" action="cadras.php">
         Nome: <input type="text" name="name"><br>
         Sobrenome: <input type="text" name="sobrenome"><br>
