@@ -1,11 +1,13 @@
-
 <?php
 
 include_once('mys.php');
 
 if(isset($_POST['email'])) {
 
-  
+    if(!isset($_SESSION)) {
+        session_start();
+    }      
+
     $email = $mysqli->real_escape_string($_POST['email']);
     $senha = $mysqli->real_escape_string($_POST['senha']);
 
@@ -18,9 +20,7 @@ if(isset($_POST['email'])) {
         } else {
             echo "";
         }
-        if(!isset($_SESSION)) {
-            session_start();
-        }      
+           
     }   
  
 ?>

@@ -18,7 +18,7 @@
     <form id="botoes" method="">
             <button class="pag" name="pagbank">PAGBANK</button>
             <button class="berlanda" name="berlanda">BERLANDA</button>
-            <button class="renner" name="renner">RENNER</button>
+            <button class="renner" name="renner">RENNER</button> 
             <button class="return" name="return">RETURN</button>
             <button class="bradesco" name="bradesco">BRADESCO</button>
             <button class="itapeva" name="itapeva">ITAPEVA</button>
@@ -32,16 +32,15 @@
     </form>
     <form action="../login/login.php">
     <button class="sair" type="submit">Sair</button>
-    </form>
-<div class="container">
+</form>
+<div id="container">
     <div class="message"></div>
     <div class="zenvia"></div>
     <div class="kolmeya"></div>
-    <div class="caixa"></div>
+    <div class="caixa"></div>  
     <div class="bradesco1"></div>
     <div class="claro"></div>
     <div class="lemit"></div>
 </div>
-<div class="logo">CAIXA</div>
 </body>
 </html>
