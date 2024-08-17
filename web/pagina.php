@@ -16,31 +16,34 @@
         <ul id="lateral"></ul>
     </nav>
     <form id="botoes" method="">
-            <button class="pag" name="pagbank">PAGBANK</button>
-            <button class="berlanda" name="berlanda">BERLANDA</button>
-            <button class="renner" name="renner">RENNER</button> 
-            <button class="return" name="return">RETURN</button>
-            <button class="bradesco" name="bradesco">BRADESCO</button>
-            <button class="itapeva" name="itapeva">ITAPEVA</button>
-            <button class="zema" name="zema">ZEMA</button>
-            <button class="mercado" name="mercado">LOJAS MM</button>
-            <button class="credipar" name="credipar">CREDIPAR</button>
-            <button class="ligga" name="ligga">LIGGA</button>
-            <button class="sercomtel" name="sercomtel">SERCOMTEL</button>
-            <button class="bmg" name="bmg">BMG</button>
-            <button class="losango" name="losango">LOSANGO</button>
+            <button formaction="../pagbank/pagbank.php" class="pag" name="pagbank">PAGBANK</button>
+            <button formaction="../berlanda/berlanda.php"   class="berlanda" name="berlanda">BERLANDA</button>
+            <button formaction="../renner/renner.php"     class="renner" name="renner">RENNER</button> 
+            <button formaction="../return/return.php"     class="return" name="return">RETURN</button>
+            <button formaction="../bradesco/bradesco.php"  class="bradesco" name="bradesco">BRADESCO</button>
+            <button formaction="../itapeva/itapeva.php"  class="itapeva" name="itapeva">ITAPEVA</button>
+            <button formaction="../zema/zema.php" class="zema" name="zema">ZEMA</button>
+            <button formaction="../lojas mm/mm.php" class="mercado" name="mercado">LOJAS MM</button>
+            <button formaction="../credipar/credipar.php" class="credipar" name="credipar">CREDIPAR</button>
+            <button formaction="../ligga/ligga.php" class="ligga" name="ligga">LIGGA</button>
+            <button formaction="../sercomtel/sercomtel.php" class="sercomtel" name="sercomtel">SERCOMTEL</button>
+            <button formaction="../bmg/bmg.php" class="bmg" name="bmg">BMG</button>
+            <button formaction="../losango/losango.php" class="losango" name="losango">LOSANGO</button>
     </form>
     <form action="../login/login.php">
     <button class="sair" type="submit">Sair</button>
 </form>
 <div id="container">
-    <div class="message"></div>
+    <div  class="message"></div>
     <div class="zenvia"></div>
     <div class="kolmeya"></div>
-    <div class="caixa"></div>  
-    <div class="bradesco1"></div>
+</div>
+<div id="containerr">
+<div class="message"></div>
     <div class="claro"></div>
-    <div class="lemit"></div>
+    <div class="caixa"></div>
+    <div class="lemit"></div>  
+    <div class="bradesco1"></div>
 </div>
 </body>
 </html>

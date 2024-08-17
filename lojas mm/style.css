@@ -1,0 +1,89 @@
+body {
+    background: linear-gradient(to right, rgb(238, 238, 238), #eeeaea);
+}
+
+h1{
+    position: absolute;
+    background: linear-gradient(135deg, #c9c9c5, #ffffff);
+    font-size: 38px;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: -15px;
+    padding: 10px 10px;
+    text-align: center;
+    width: 206px;
+    left: 2%;
+
+}
+
+#barra {
+    background: linear-gradient(to right, rgb(20, 10, 8), #cc5713);
+    padding: 50px;
+    border-radius: 20px;
+    margin-top: -40px;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.controle {
+    position: absolute;
+    color: white;
+    background-color: rgb(44, 44, 39);
+    border-radius: 20px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    width: 105px;
+    box-shadow: 5px 5px 10px  #020202, -5px -5px 10px #000000;
+    left: 20px;
+    margin-top: 70px;
+}
+
+
+.cronograma {
+    position: absolute;
+    color: white;
+    background-color: rgb(44, 44, 39);
+    border-radius: 20px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    width: 105px;
+    box-shadow: 5px 5px 10px  #020202, -5px -5px 10px #000000;
+    left: 20px;
+    margin-top: 120px;
+}
+
+.orcamento {
+    position: absolute;
+    color: white;
+    background-color: rgb(44, 44, 39);
+    border-radius: 20px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    width: 105px;
+    box-shadow: 5px 5px 10px  #020202, -5px -5px 10px #000000;
+    left: 20px;
+    margin-top: 170px;
+}
+
+#lateral {
+    position: absolute;
+    background: linear-gradient(to right, rgb(20, 10, 8), #c73713);
+    padding: 50px;
+    border-radius: 20px;
+    margin-top: 80px;
+    text-transform: uppercase;
+    list-style: none;
+    left: 8px;
+    height: 15vh;
+    width: 30px;
+}
