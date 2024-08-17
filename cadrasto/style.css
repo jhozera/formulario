@@ -1,11 +1,11 @@
 body {
     position: relative;
-    background: linear-gradient(to right,  rgb(104, 35, 35), #520404);
+    background: linear-gradient(to right, rgb(23, 25, 26), #1b1b1b);
     margin: 0 auto;
     margin-top: 100px;
     width: 300px;
     border-radius: 40px;
-    box-shadow: 5px 5px 10px#dbdada, -5px -5px 10px #a8a6a6;
+    box-shadow: 5px 5px 10px #5d0391, -5px -5px 10px #6902a5;
     padding: 30px;
   }
 

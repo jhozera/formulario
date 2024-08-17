@@ -1,11 +1,11 @@
 body {
-    background: linear-gradient(to right, rgb(255, 255, 255), #ffffff);
+    background: linear-gradient(to right, rgb(23, 25, 26), #1b1b1b);
 }
 
 
 h1 {
     position: absolute;
-    background: linear-gradient(135deg, #bd0606, #ffffff);
+    background: linear-gradient(135deg, #ecebec, #ffffff);
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
     -webkit-background-clip: text;
@@ -19,7 +19,7 @@ h1 {
 
 h2 {
     position: absolute;
-    background: linear-gradient(135deg, #313030, #e40303);
+    background: linear-gradient(135deg, #f2f0f3, #ffffff);
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
     -webkit-background-clip: text;
@@ -32,7 +32,7 @@ h2 {
 
 h3 {
     position: absolute;
-    background: linear-gradient(135deg, #313030, #e40303);
+    background: linear-gradient(135deg, #ffffff, #ffffff);
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
     -webkit-background-clip: text;
@@ -162,17 +162,20 @@ h3 {
 }
 
 #barra {
-    background: linear-gradient(to right, rgb(20, 10, 8), #770202);
+    background: linear-gradient(to right, rgb(23, 25, 26), #1b1b1b);
     padding: 50px;
     border-radius: 20px;
     margin-top: -40px;
     text-transform: uppercase;
     list-style: none;
+    border: 5px solid #45024d;
+    box-shadow: 5px 5px 10px #14011f, -5px -5px 10px #160122;
+
 }
 
 #lateral {
     position: absolute;
-    background: linear-gradient(to right, rgb(44, 44, 44), #380404);
+    background: linear-gradient(to right, rgb(29, 27, 27), #4b015e);
     padding: 65px;
     border-radius: 20px;
     margin-top: 10px;
@@ -181,12 +184,13 @@ h3 {
     height: 100vh;
     text-transform: uppercase;
     list-style: none;
+    box-shadow: 5px 5px 10px #14011f, -5px -5px 10px #160122;
 }
 
 
 .sair {
     color:#ffffff;
-    background-color: #770202;
+    background-color: #770294;
     border: rgb(39, 37, 37);
     border-radius: 10px;
     position: absolute;
@@ -197,14 +201,15 @@ h3 {
     padding: 5px;
     width: 45px;
     left: 95%;
+    box-shadow: 5px 5px 10px #390158, -5px -5px 10px #390158;
 
 }
 
 
 #container {
     display: flex;
-    background-color: rgb(255, 255, 255);
-    border: 5px solid rgb(107, 4, 4);
+    background-color: linear-gradient(to right, rgb(87, 4, 182), #7707ac);
+    border: 7px solid #7f039e;
     border-radius: 10px;
     margin-top: 100px;
     padding: 15px;
@@ -215,37 +220,41 @@ h3 {
     align-content: flex-start;
     gap: 10px;
     flex-wrap: wrap ;
+    box-shadow: 5px 5px 10px #390158, -5px -5px 10px #390158;
 
 }
 
 
 .message {
     border-radius: 5px;
-    border: 5px solid rgb(107, 4, 4);
+    border: 5px solid #7707ac;
     height: 50px;
     width: 100px;
+    box-shadow: 5px 5px 10px #390158, -5px -5px 10px #390158;
     
 }
 
 .zenvia {
     border-radius: 5px;
-    border: 5px solid rgb(107, 4, 4);
+    border: 5px solid #7707ac;
     height: 50px;
     width: 100px;
+    box-shadow: 5px 5px 10px #390158, -5px -5px 10px #390158;
 }
 
 
 .kolmeya {
     border-radius: 5px;
-    border: 5px solid rgb(107, 4, 4);
+    border: 5px solid #7707ac;
     height: 50px;
     width: 100px;
+    box-shadow: 5px 5px 10px #390158, -5px -5px 10px #390158;
 }
 
 #containerr {
     display: flex;
-    background-color: rgb(255, 255, 255);
-    border: 5px solid rgb(107, 4, 4);
+    background-color: linear-gradient(to right, rgb(87, 4, 182), #7707ac);
+    border: 5px solid #9508b8;
     border-radius: 10px;
     margin-top: -335px;
     padding: 15px;
@@ -256,38 +265,41 @@ h3 {
     align-content: flex-start;
     gap: 10px;
     flex-wrap: wrap ;
+    box-shadow: 5px 5px 10px #390158, -5px -5px 10px #390158;
 
 }
 
 .lemit {
     border-radius: 5px;
-    border: 5px solid rgb(107, 4, 4);
+    border: 5px solid #7707ac;
     height: 50px;
     width: 100px;
+    box-shadow: 5px 5px 10px #390158, -5px -5px 10px #390158;
 }
 
 .bradesco1 {
     border-radius: 5px;
-    border: 5px solid rgb(107, 4, 4);
+    border: 5px solid #7707ac;
     height: 50px;
     width: 100px;
-    font-size: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 5px 5px 10px #390158, -5px -5px 10px #390158;
 }
 
 
 .claro {
     border-radius: 5px;
-    border: 5px solid rgb(107, 4, 4);
+    border: 5px solid #7707ac;
     height: 50px;
     width: 100px;
+    box-shadow: 5px 5px 10px #390158, -5px -5px 10px #390158;
 
 }
 
 .caixa {
     border-radius: 5px;
-    border: 5px solid rgb(107, 4, 4);
+    border: 5px solid #7707ac;
     height: 50px;
     width: 100px;
+    box-shadow: 5px 5px 10px #390158, -5px -5px 10px #390158;
 
 }

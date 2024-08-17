@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to right, rgb(238, 238, 238), #eeeaea);
+    background: linear-gradient(to right, rgb(23, 25, 26), #1b1b1b);
 }
 
 h1{
@@ -13,7 +13,7 @@ h1{
     padding: 10px 10px;
     text-align: center;
     width: 206px;
-    left: 2%;
+    left:-15px;
 
 }
 
@@ -24,6 +24,7 @@ h1{
     margin-top: -40px;
     text-transform: uppercase;
     list-style: none;
+    box-shadow: 5px 5px 10px #302d2d, -5px -5px 10px #302d2d;
 }
 
 .controle {
@@ -86,4 +87,5 @@ h1{
     left: 8px;
     height: 15vh;
     width: 30px;
+    box-shadow: 5px 5px 10px #302d2d, -5px -5px 10px #302d2d;
 }

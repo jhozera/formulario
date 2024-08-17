@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to right, rgb(238, 238, 238), #eeeaea);
+    background: linear-gradient(to right, rgb(23, 25, 26), #1b1b1b);
 }
 
 h1{
@@ -18,12 +18,13 @@ h1{
 }
 
 #barra {
-    background: linear-gradient(to right, rgb(20, 10, 8), #acaf03);
+    background: linear-gradient(to right, rgb(20, 10, 8), #038614);
     padding: 50px;
     border-radius: 20px;
     margin-top: -40px;
     text-transform: uppercase;
     list-style: none;
+    box-shadow: 5px 5px 10px #134b02, -5px -5px 10px #134b02;
 }
 
 .controle {
@@ -77,7 +78,7 @@ h1{
 
 #lateral {
     position: absolute;
-    background: linear-gradient(to right, rgb(20, 10, 8), #86863f);
+    background: linear-gradient(to right, rgb(20, 10, 8), #038614);
     padding: 50px;
     border-radius: 20px;
     margin-top: 80px;
@@ -86,4 +87,27 @@ h1{
     left: 8px;
     height: 15vh;
     width: 30px;
+    box-shadow: 5px 5px 10px #134b02, -5px -5px 10px #134b02;
 }
+    
+table th {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(221, 221, 221);
+    border: 3px solid white;
+    border-radius: 2px;
+    left: 500px;
+    margin-top: 100px;
+    border-collapse:collapse ;
+
+ }
+
+table td {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(221, 221, 221);
+    border: 3px solid white;
+    border-radius: 2px;
+    left: 500px;
+    margin-top: 300px;
+    border-collapse:collapse ;
+
+ }

@@ -13,7 +13,7 @@
     <ul id="lateral"></ul>
 </nav>
 <form>
-    <button class="controle" name="controle" onclick="" >controle</button>
+    <button class="controle" name="controle" >controle</button>
     <button class="cronograma" name="cronograma" >cronograma</button>
     <button class="orcamento" name="orcamento" >orçamento</button>
 </form>

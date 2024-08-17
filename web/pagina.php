@@ -34,16 +34,29 @@
     <button class="sair" type="submit">Sair</button>
 </form>
 <div id="container">
-    <div  class="message"></div>
-    <div class="zenvia"></div>
-    <div class="kolmeya"></div>
+    <div  class="message">
+    <img src="../modelos/MESSAGE.PNG" style="height:50px; margin-top: -1px; translate: 1px;">
+    </div>
+    <div class="zenvia">
+    <img src="../modelos/ZENVIA.png" style="height:50px; margin-top: -1px; translate: 1px;">
+    </div>
+    <div class="kolmeya">
+        <img src="../modelos/KOLMEYA.png" style="height:50px; margin-top: 1px; translate: -1px;">
+</div>
 </div>
 <div id="containerr">
-<div class="message"></div>
-    <div class="claro"></div>
-    <div class="caixa"></div>
-    <div class="lemit"></div>  
-    <div class="bradesco1"></div>
+    <div class="claro">
+    <img src="../modelos/CLARO.PNG" style="height:50px; margin-top: 1px; translate: -2px;">
+    </div>
+    <div class="caixa">
+    <img src="../modelos/CAIXA.PNG" style="height:50px; margin-top: 1px; translate: -2px;">
+    </div>
+    <div class="lemit">
+    <img src="../modelos/LEMIT.PNG" style="height:50px; margin-top: 1px; translate: -2px;">
+    </div>  
+    <div class="bradesco1">
+    <img src="../modelos/BRADESCO.PNG" style="height:50px; margin-top: 1px; translate: 3px; width:95px;">
+    </div>
 </div>
 </body>
 </html>
