@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>PLATAFORMAS MASSIVAS</h2>
+    <h2 class="h2">PLATAFORMAS MASSIVAS</h2>
     <h3>ENRIQUECIMENTO</h3>
     <nav>
         <ul id="barra">
@@ -18,8 +18,8 @@
     <form id="botoes" method="">
             <button formaction="../pagbank/pagbank.php" class="pag" name="pagbank">PAGBANK</button>
             <button formaction="../berlanda/berlanda.php"   class="berlanda" name="berlanda">BERLANDA</button>
-            <button formaction="../renner/renner.php"     class="renner" name="renner">RENNER</button> 
-            <button formaction="../return/return.php"     class="return" name="return">RETURN</button>
+            <button formaction="../renner/renner.php"  class="renner" name="renner">RENNER</button> 
+            <button formaction="../return/return.php"  class="return" name="return">RETURN</button>
             <button formaction="../bradesco/bradesco.php"  class="bradesco" name="bradesco">BRADESCO</button>
             <button formaction="../itapeva/itapeva.php"  class="itapeva" name="itapeva">ITAPEVA</button>
             <button formaction="../zema/zema.php" class="zema" name="zema">ZEMA</button>

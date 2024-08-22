@@ -1,3 +1,35 @@
+@media screen and (max-width: 475px) {
+    #barra {
+        width: 375px;
+        
+    }
+  }
+
+@media screen and (max-width: 475px) {
+   
+    #container {
+        width: 150px;
+    }
+  }
+  
+@media screen and (max-width: 475px) {
+   
+    .h2 {
+        font-size: 20px;
+        left: 250px;
+
+    }
+
+  }
+    
+@media screen and (max-width: 475px) {
+   
+    .message {
+        left: 250px;
+
+    }
+
+  }
 body {
     background: linear-gradient(to right, rgb(23, 25, 26), #1b1b1b);
 }
