@@ -12,11 +12,11 @@
 <caption>Agosto</caption>
       <thead>
         <tr>
-            <th>Data</th>
-            <th>SMS</th>
-            <th>RCS</th>
-            <th>EMAIL</th>
-            <th>WHATS</th>
+            <th style="font-size: 15px; border: 3px solid rgb(200, 202, 200);">Data</th>
+            <th style="font-size: 15px;border: 3px solid rgb(200, 202, 200);">SMS</th>
+            <th style="font-size: 15px;border: 3px solid rgb(200, 202, 200);" >RCS</th>
+            <th style="font-size: 15px;border: 3px solid rgb(200, 202, 200);">EMAIL</th>
+            <th style="font-size: 15px;border: 3px solid rgb(200, 202, 200);">WHATS</th>
         </tr>
     </thead>
     <tbody>

@@ -93,7 +93,7 @@ h1{
  #esconder {
     position: absolute;
     top: 160px;
-    left: 500px;
+    left: 300px;
     display: none; 
   }
   
@@ -101,8 +101,9 @@ table caption {
     color: white;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
-    border: solid 3px;
-    border-radius: 3px;
+    border: solid 3px rgb(200, 202, 200);
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px #2e302e, -5px -5px 10px #2e302e;
 }
 
 table th {
@@ -110,10 +111,11 @@ table th {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     border: 3px solid white;
-    border-radius: 2px;
+    border-radius: 10px;
     left: 500px;
     margin-top: 100px;
     border-collapse:collapse ;
+    box-shadow: 5px 5px 10px #2e302e, -5px -5px 10px #2e302e;
 
  }
 
@@ -121,11 +123,12 @@ table td {
     border: 0px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    border: 3px solid white;
-    border-radius: 2px;
+    border: 3px solid rgb(200, 202, 200);
+    border-radius: 10px;
     left: 500px;
     margin-top: 300px;
     border-collapse:collapse ;
+    box-shadow: 5px 5px 10px #2e302e, -5px -5px 10px #2e302e;
 
  }
 
@@ -134,8 +137,8 @@ table td {
     border: 0px;
     background-color: #038614;
     font-family: Arial, Helvetica, sans-serif;
-    border-radius: 3px;
-    box-shadow: 5px 5px 10px #134b02, -5px -5px 10px #134b02;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #2e302e, -5px -5px 10px #2e302e;
  }
 
 
@@ -144,7 +147,7 @@ table td {
     background-color: #038614;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    border-radius: 3px;
+    border-radius: 50px;
 
  }
 
@@ -154,12 +157,9 @@ table td {
     color: white;
     background-color: rgb(0, 0, 0);
     margin-top: 185px;
-    left: 500px;
+    left: 300px;
     text-align: center;
     border-radius: 50px;
     display: none;
+    box-shadow: 5px 5px 10px #303130, -5px -5px 10px #303130;
  }
-
-.te {
-    background-color: #038614;
-}
