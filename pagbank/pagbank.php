@@ -1,3 +1,23 @@
+<?php
+
+include_once('../login/mys.php');
+
+if(isset($_POST['email'])) {
+
+    if(!isset($_SESSION)) {
+        session_start();
+    }      
+
+    $email = $mysqli->real_escape_string($_POST['email']);
+    $senha = $mysqli->real_escape_string($_POST['senha']);
+
+        $sql_code = "SELECT * FROM crograma";
+      
+    }   
+ 
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -230,6 +250,12 @@
     <button type="button" onclick="toggleDiv()"   id="cronograma" >cronograma</button>
     <button type="button" onclick="toggleorca()"  id="orcamento" >orçamento</button>
 </form>
+<div id="importar">
+<form method="POST" action="../dados/dados.php"  enctype="multipart/form-data">
+    <input id="arquivo1"  onclick="toggleDiv()" type="file"   name="arquivo">
+    <input id="enviar"   onclick="toggleDiv()" type="submit" value="Enviar">
+</form>
+</div>
 </body>
 </html>
 

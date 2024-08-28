@@ -163,3 +163,29 @@ table td {
     display: none;
     box-shadow: 5px 5px 10px #303130, -5px -5px 10px #303130;
  }
+
+
+#importar {
+    display: none;
+}
+
+
+ #arquivo1 {
+    color: white;
+    position: absolute;
+    border-radius: 20px;
+    margin-top: 100px;
+    left: 1100px;
+ }
+
+ #enviar {
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    border-radius: 20px;
+    margin-top: 175px;
+    left: 1100px;
+    padding: 6px;
+    /* box-shadow: 5px 5px 10px  #025002, -5px -5px 10px #025002; */
+
+ }

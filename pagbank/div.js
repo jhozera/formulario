@@ -11,3 +11,11 @@ function toggleDiv() {
     div.style.display = div.style.display === "block" ? "none" : "block";
   }
 
+
+  function toggleDiv() {
+    var div = document.getElementById("importar");
+    div.style.display = div.style.display === "block" ? "none" : "block";
+  }
+
+
+
