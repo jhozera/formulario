@@ -155,19 +155,18 @@ table td {
 #orca{
     position: absolute;
     color: white;
-    background-color: rgb(0, 0, 0);
+    background-color: #070707;
     margin-top: 185px;
     left: 300px;
     text-align: center;
-    border-radius: 50px;
+    border: solid 3px white;
+    border-radius: 20px;
     display: none;
-    box-shadow: 5px 5px 10px #303130, -5px -5px 10px #303130;
+    box-shadow: 5px 5px 10px #029902, -5px -5px 10px #039403;
  }
 
 
-#importar {
-    display: none;
-}
+
 
 
  #arquivo1 {
@@ -175,7 +174,7 @@ table td {
     position: absolute;
     border-radius: 20px;
     margin-top: 100px;
-    left: 1100px;
+    left: 300px;
  }
 
  #enviar {
@@ -184,8 +183,31 @@ table td {
     position: absolute;
     border-radius: 20px;
     margin-top: 175px;
-    left: 1100px;
+    left: 300px;
     padding: 6px;
     /* box-shadow: 5px 5px 10px  #025002, -5px -5px 10px #025002; */
 
  }
+
+
+
+ #dados {
+    position: absolute;
+    color: white;
+    background-color: rgb(44, 44, 39);
+    border-radius: 20px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    width: 105px;
+    box-shadow: 5px 5px 10px  #020202, -5px -5px 10px #000000;
+    left: 20px;
+    margin-top: 220px;
+}
+ 
+
+#impor #importarForm {
+    display: none;
+}

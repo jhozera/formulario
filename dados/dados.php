@@ -20,12 +20,14 @@ if($arquivo['type'] == "text/csv"){
         var_dump($linha);
 
 
-        $query_usuario ="INSERT INTO cronograma (SMS, RCS, EMAIL, WHATS) VALUES (:SMS, :RCS, :EMAIL, :WHATS)";
-        $cad_usuario = $conexao->prepare($query_usuario); 
+        $query_usuario ="INSERT INTO cronograma (data,SMS, RCS, EMAIL, WHATS, id_car) VALUES (:data, :SMS, :RCS, :EMAIL, :WHATS, :id_car)";
+        $cad_usuario = $conexao->prepare($query_usuario);
+        $cad_usuario->bindValue(':data', ($linha[0] ?? "NULL")); 
         $cad_usuario->bindValue(':SMS', ($linha[0] ?? "NULL"));
         $cad_usuario->bindValue(':RCS', ($linha[1] ?? "NULL"));
         $cad_usuario->bindValue(':EMAIL', ($linha[2] ?? "NULL"));
         $cad_usuario->bindValue(':WHATS', ($linha[3] ?? "NULL"));
+        $cad_usuario->bindValue(':id_car', ($linha[0] ?? "NULL"));
         $cad_usuario->execute();
 
         if($cad_usuario->rowCount()){ 

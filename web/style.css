@@ -252,7 +252,7 @@ h3 {
     align-content: flex-start;
     gap: 10px;
     flex-wrap: wrap ;
-    box-shadow: 5px 5px 10px #390158, -5px -5px 10px #390158;
+    /* box-shadow: 5px 5px 10px #000000, -5px -5px 10px #000000; */
 
 }
 
@@ -262,7 +262,7 @@ h3 {
     border: 5px solid #7707ac;
     height: 50px;
     width: 100px;
-    box-shadow: 5px 5px 10px #390158, -5px -5px 10px #390158;
+    /* box-shadow: 5px 5px 10px #000000, -5px -5px 10px #000000; */
     
 }
 
@@ -271,7 +271,7 @@ h3 {
     border: 5px solid #7707ac;
     height: 50px;
     width: 100px;
-    box-shadow: 5px 5px 10px #390158, -5px -5px 10px #390158;
+    /* box-shadow: 5px 5px 10px #000000, -5px -5px 10px #000000; */
 }
 
 
@@ -280,7 +280,7 @@ h3 {
     border: 5px solid #7707ac;
     height: 50px;
     width: 100px;
-    box-shadow: 5px 5px 10px #390158, -5px -5px 10px #390158;
+    /* box-shadow: 5px 5px 10px #000000, -5px -5px 10px #000000; */
 }
 
 #containerr {
@@ -297,7 +297,7 @@ h3 {
     align-content: flex-start;
     gap: 10px;
     flex-wrap: wrap ;
-    box-shadow: 5px 5px 10px #390158, -5px -5px 10px #390158;
+    /* box-shadow: 5px 5px 10px #000000, -5px -5px 10px #000000; */
 
 }
 
@@ -306,7 +306,7 @@ h3 {
     border: 5px solid #7707ac;
     height: 50px;
     width: 100px;
-    box-shadow: 5px 5px 10px #390158, -5px -5px 10px #390158;
+    /* box-shadow: 5px 5px 10px #000000, -5px -5px 10px #000000; */
 }
 
 .bradesco1 {
@@ -314,7 +314,7 @@ h3 {
     border: 5px solid #7707ac;
     height: 50px;
     width: 100px;
-    box-shadow: 5px 5px 10px #390158, -5px -5px 10px #390158;
+    /* box-shadow: 5px 5px 10px #000000, -5px -5px 10px #000000; */
 }
 
 
@@ -323,7 +323,7 @@ h3 {
     border: 5px solid #7707ac;
     height: 50px;
     width: 100px;
-    box-shadow: 5px 5px 10px #390158, -5px -5px 10px #390158;
+    /* box-shadow: 5px 5px 10px #000000, -5px -5px 10px #000000; */
 
 }
 
@@ -332,6 +332,6 @@ h3 {
     border: 5px solid #7707ac;
     height: 50px;
     width: 100px;
-    box-shadow: 5px 5px 10px #390158, -5px -5px 10px #390158;
+    /* box-shadow: 5px 5px 10px #000000, -5px -5px 10px #000000; */
 
 }

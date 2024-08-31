@@ -24,7 +24,7 @@ h1{
     margin-top: -40px;
     text-transform: uppercase;
     list-style: none;
-    box-shadow: 5px 5px 10px #523903, -5px -5px 10px #523903;
+    /* box-shadow: 5px 5px 10px #523903, -5px -5px 10px #523903; */
 }
 
 
@@ -88,5 +88,5 @@ h1{
     left: 8px;
     height: 15vh;
     width: 30px;
-    box-shadow: 5px 5px 10px #523903, -5px -5px 10px #523903;
+    /* box-shadow: 5px 5px 10px #523903, -5px -5px 10px #523903; */
 }

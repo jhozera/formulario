@@ -12,10 +12,8 @@ function toggleDiv() {
   }
 
 
-  function toggleDiv() {
-    var div = document.getElementById("importar");
-    div.style.display = div.style.display === "block" ? "none" : "block";
-  }
-
-
-
+ 
+  function toggleimp() {
+    var form = document.getElementById("importarForm");
+    form.style.display = form.style.display === "block" ? "none" : "block";
+}

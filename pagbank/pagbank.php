@@ -1,25 +1,21 @@
-<?php
-
-include_once('../login/mys.php');
-
-if(isset($_POST['email'])) {
-
-    if(!isset($_SESSION)) {
-        session_start();
-    }      
-
-    $email = $mysqli->real_escape_string($_POST['email']);
-    $senha = $mysqli->real_escape_string($_POST['senha']);
-
-        $sql_code = "SELECT * FROM crograma";
-      
-    }   
- 
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
+
+<?php
+
+$usuario = 'root';
+$senha = '';
+$database = 'pro';
+$host = 'localhost';
+
+$mysqli = new mysqli($host, $usuario, $senha, $database);
+
+$sql = "SELECT * FROM massivos WHERE nome";
+$result = $mysqli->query($sql);
+
+$mysqli->close();
+?>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -250,12 +246,13 @@ if(isset($_POST['email'])) {
     <button type="button" onclick="toggleDiv()"   id="cronograma" >cronograma</button>
     <button type="button" onclick="toggleorca()"  id="orcamento" >orçamento</button>
 </form>
-<div id="importar">
-<form method="POST" action="../dados/dados.php"  enctype="multipart/form-data">
-    <input id="arquivo1"  onclick="toggleDiv()" type="file"   name="arquivo">
-    <input id="enviar"   onclick="toggleDiv()" type="submit" value="Enviar">
-</form>
-</div>
+<button type="button" id="dados" onclick="toggleimp()">IMPORTAR</button>
+<div id="importarForm">
+        <form method="POST" action="../dados/dados.php" enctype="multipart/form-data">
+            <input id="arquivo1" type="file" name="arquivo">
+            <input id="enviar" type="submit" value="Enviar">
+        </form>
+    </div>
 </body>
 </html>
 
