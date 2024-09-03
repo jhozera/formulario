@@ -24,7 +24,7 @@ h1{
     margin-top: -40px;
     text-transform: uppercase;
     list-style: none;
-    box-shadow: 5px 5px 10px #134b02, -5px -5px 10px #134b02;
+    /* box-shadow: 5px 5px 10px #134b02, -5px -5px 10px #134b02; */
 }
 
 #controle {
@@ -87,7 +87,7 @@ h1{
     left: 8px;
     height: 15vh;
     width: 30px;
-    box-shadow: 5px 5px 10px #134b02, -5px -5px 10px #134b02;
+    /* box-shadow: 5px 5px 10px #134b02, -5px -5px 10px #134b02; */
 }
     
  #esconder {
@@ -162,7 +162,7 @@ table td {
     border: solid 3px white;
     border-radius: 20px;
     display: none;
-    box-shadow: 5px 5px 10px #029902, -5px -5px 10px #039403;
+    /* box-shadow: 5px 5px 10px #029902, -5px -5px 10px #039403; */
  }
 
 
